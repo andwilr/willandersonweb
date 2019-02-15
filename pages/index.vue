@@ -1,38 +1,46 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        willandersonweb
+      <Logo class="logo" />
+      <h1>
+        Will Anderson
       </h1>
-      <h2 class="subtitle">
-        Personal Website
-      </h2>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
+          href="https://stackoverflow.com/users/3272906/willanderson"
+          target="_blank">Stack Overflow</a> | 
         <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+          href="https://github.com/andwilr"
+          target="_blank">GitHub</a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+// import AppLogo from '~/components/AppLogo.vue'
+import Logo from '@/assets/svg/logo.svg';
 
 export default {
   components: {
-    AppLogo
+    Logo
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+$black: #000;
+$primary: #65EFD5;
+
+.logo {
+  fill:$primary;
+  display:block;
+  width:100px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -41,25 +49,26 @@ export default {
   text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-weight: 800;
+  font-size: 68px;
+  font-style: italic;
+  color: #000;
   letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
 .links {
   padding-top: 15px;
+  a {
+    transition:all .2s;
+    color:$black;
+    text-decoration:none;
+    &:hover {
+      color:$primary;
+    }
+  }
 }
 </style>
 

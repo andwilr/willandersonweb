@@ -3,14 +3,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'willandersonweb',
+    title: 'Will Anderson',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Personal Website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat+Alternates:800i' },
     ]
   },
   /*
@@ -20,6 +21,11 @@ module.exports = {
   /*
   ** Build configuration
   */
+
+  modules: [
+    'nuxt-svg-loader',
+  ],
+
   build: {
     /*
     ** Run ESLint on save
@@ -30,7 +36,7 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)||(.svg$)/
         })
       }
     }
