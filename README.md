@@ -1,5 +1,7 @@
 # willandersonweb
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ef198edc-e9c4-472b-b9bf-c86debfadef9/deploy-status)](https://app.netlify.com/sites/willandersonweb/deploys)
+
 > Personal Website
 
 ## Build Setup
