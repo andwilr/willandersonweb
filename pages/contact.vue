@@ -6,12 +6,12 @@
       </li>
     </ul>
     <h1 class="Page-title">drop me a line</h1>
-    <form netlify-honeypot="bot-field" data-netlify="true">
+    <form name="Contact" netlify-honeypot="bot-field" data-netlify="true">
       <div class="Form-row">
-        <input type="text" placeholder="Name" required="">
+        <input name="name" type="text" placeholder="Name" required="">
       </div>
       <div class="Form-row">
-        <input type="email" placeholder="Email" required="">
+        <input name="email" type="email" placeholder="Email" required="">
       </div>
       <div class="Form-row">
         <textarea name="message" placeholder="Message" required=""></textarea>
