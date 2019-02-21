@@ -4,7 +4,7 @@
 
 My personal website: [https://willandersonweb.com](https://willandersonweb.com)
 
-Built with [Nuxt.js docs](https://github.com/nuxt/nuxt.js) and auto-deployed through [Netlify](https://www.netlify.com/)
+Built with [Nuxt.js](https://nuxtjs.org/) and auto-deployed through [Netlify](https://www.netlify.com/)
 
 
 ## Build Setup
