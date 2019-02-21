@@ -1,74 +1,32 @@
 <template>
-  <section class="container">
-    <div>
-      <Logo class="logo" />
-      <h1>
-        Will Anderson
-      </h1>
-      <div class="links">
-        <a
-          href="https://stackoverflow.com/users/3272906/willanderson"
-          target="_blank">Stack Overflow</a> | 
-        <a
-          href="https://github.com/andwilr"
-          target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div class="Intro">
+    <h2>Front-end Developer / Problem Solver</h2>
+    <h1 class="Page-title">where there&rsquo;s<br> a me&hellip; <span class="highlight">there&rsquo;s a way.</span></h1>
+  </div>
 </template>
 
 <script>
-// import AppLogo from '~/components/AppLogo.vue'
-import Logo from '@/assets/svg/logo.svg';
-
 export default {
-  components: {
-    Logo
-  }
+  transition: 'layout',
+  head () {
+    return {
+      title: "Will Anderson | Front-end Developer & Problem Solver"
+    }
+  },
 }
 </script>
 
 <style lang="scss">
-$black: #000;
-$primary: #65EFD5;
-
-.logo {
-  fill:$primary;
-  display:block;
-  width:100px;
-  height:auto;
-  margin-left:auto;
-  margin-right:auto;
+.Intro {
+  align-self:center;
+  text-align:center;
 }
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.Page-title {
+  text-align:center;
 }
-
-h1 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  display: block;
-  font-weight: 800;
-  font-size: 68px;
-  font-style: italic;
-  color: #000;
-  letter-spacing: 1px;
-}
-
-.links {
-  padding-top: 15px;
-  a {
-    transition:all .2s;
-    color:$black;
-    text-decoration:none;
-    &:hover {
-      color:$primary;
-    }
-  }
+.highlight {
+  background-color:rgba($primary,.5);
 }
 </style>
+
 

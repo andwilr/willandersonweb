@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat+Alternates:800i' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates:800i|Share+Tech+Mono' },
     ]
   },
   /*
@@ -24,7 +24,16 @@ module.exports = {
 
   modules: [
     'nuxt-svg-loader',
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      '~assets/scss/_variables.scss'
+      ]
+  },
+
+  layoutTransition: 'layout',
 
   build: {
     /*
