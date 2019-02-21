@@ -6,16 +6,38 @@
       </li>
     </ul>
     <h1 class="Page-title">drop me a line</h1>
-    <form name="Contact" netlify-honeypot="bot-field" data-netlify="true">
+    <form
+      name="will-anderson-contact"
+      method="post"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      >
+      <input
+        type="hidden"
+        name="form-name" 
+        value="will-anderson-contact" />
+      <input
+        name="bot-field"
+        style="display:none;" />
       <div class="Form-row">
-        <input name="name" type="text" placeholder="Name" required="">
+        <input
+          name="name"
+          type="text"
+          placeholder="Name"
+          required="" />
       </div>
       <div class="Form-row">
-        <input name="email" type="email" placeholder="Email" required="">
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          required="" />
       </div>
       <div class="Form-row">
-        <textarea name="message" placeholder="Message" required=""></textarea>
-        <input name="bot-field" style="display:none;" />
+        <textarea
+          name="message"
+          placeholder="Message"
+          required=""></textarea>
       </div>
       <div class="Form-row">
         <button class="Button" type="submit">Send Message</button>
