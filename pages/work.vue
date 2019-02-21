@@ -2,11 +2,11 @@
   <div>
     <h1 class="Page-title">recent work</h1>
     <ul class="Sites">
-      <li v-for="site in sites">
+      <li v-for="item in work">
         <Card
-          :title="site.title"
-          :description="site.description"
-          :url="site.url" />
+          :title="item.title"
+          :description="item.description"
+          :url="item.url" />
       </li>
     </ul>
   </div>
@@ -16,30 +16,14 @@
 import Card from '~/components/Card.vue'
 
 export default {
-  data() {
-    return {
-      sites: [
-        {
-          title: 'locksmithdisciples.com',
-          description: '<p>Logo, Custom WordPress theme, content, and SEO for Locksmith Disciples</p>',
-          url: 'https://locksmithdisciples.com'
-        },
-        {
-          title: 'crossfithamlake.com',
-          description: '<p>Custom WordPress theme for Crossfit Ham Lake</p>',
-          url: 'https://crossfithamlake.com'
-        },
-        {
-          title: 'citypages.com',
-          description: '<p>Worked with Modern Climate to redesign citypages.com</p>',
-          url: 'https://citypages.com'
-        }
-      ]
-    }
-  },
   head () {
     return {
       title: "Will Anderson's Recent Work"
+    }
+  },
+  computed: {
+    work() {
+      return this.$store.getters['work/list']
     }
   },
   components: {
