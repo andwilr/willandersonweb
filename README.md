@@ -2,7 +2,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ef198edc-e9c4-472b-b9bf-c86debfadef9/deploy-status)](https://app.netlify.com/sites/willandersonweb/deploys)
 
-> Personal Website
+My personal website: [https://willandersonweb.com](https://willandersonweb.com)
+
+Built with [Nuxt.js docs](https://github.com/nuxt/nuxt.js) and auto-deployed through [Netlify](https://www.netlify.com/)
+
 
 ## Build Setup
 
