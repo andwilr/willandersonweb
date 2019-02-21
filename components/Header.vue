@@ -4,7 +4,7 @@
       <Logo />
       <nav class="Header-links">
         <ul>
-          <li v-for="link in links">
+          <li v-for="link in socialLinks">
             <a :href="link.url" target="_blank">{{ link.title }}</a>
           </li>
         </ul>
@@ -17,12 +17,9 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  data () {
-    return {
-      links: [
-        { title: 'GitHub', url: 'https://github.com/andwilr' },
-        { title: 'Stack Overflow', url: 'https://stackoverflow.com/users/3272906/willanderson' }
-      ]
+  computed: {
+    socialLinks() {
+      return this.$store.getters['social-links/list']
     }
   },
   components : {
