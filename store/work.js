@@ -1,14 +1,14 @@
 export const state = () => ({
   list: [
     {
+      title: 'journeyhillside.com',
+      description: '<p>Custom WordPress theme for Journey Hillside Tarzana</p>',
+      url: 'https://www.journeyhillside.com/'
+    },
+    {
       title: 'locksmithdisciples.com',
       description: '<p>Logo, Custom WordPress theme, content, and SEO for Locksmith Disciples</p>',
       url: 'https://locksmithdisciples.com'
-    },
-    {
-      title: 'crossfithamlake.com',
-      description: '<p>Custom WordPress theme for Crossfit Ham Lake</p>',
-      url: 'https://crossfithamlake.com'
     },
     {
       title: 'citypages.com',

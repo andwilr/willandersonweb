@@ -5,6 +5,7 @@
     <a
       class="Button"
       :href="url"
+      rel="noreferrer"
       target="_blank">View</a>
   </div>
 </template>
