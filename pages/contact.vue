@@ -64,7 +64,7 @@ export default {
 
 <style lang="scss">
 .Intro {
-  align-self:center;
+  margin:auto auto;
   text-align:center;
 }
 .highlight {

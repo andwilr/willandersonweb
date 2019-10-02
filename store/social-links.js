@@ -1,7 +1,8 @@
 export const state = () => ({
   list: [
     { title: 'GitHub', url: 'https://github.com/andwilr' },
-    { title: 'Stack Overflow', url: 'https://stackoverflow.com/users/3272906/willanderson' }
+    { title: 'Stack Overflow', url: 'https://stackoverflow.com/users/3272906/willanderson' },
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/willandersonminnesota/' }
   ]
 })
 

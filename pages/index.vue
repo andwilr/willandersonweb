@@ -1,6 +1,6 @@
 <template>
   <div class="Intro">
-    <h2>Front-end Developer / Problem Solver</h2>
+    <h2>Front End Developer / Problem Solver</h2>
     <h1 class="Page-title">where there&rsquo;s<br> a me&hellip; <span class="highlight">there&rsquo;s a way.</span></h1>
   </div>
 </template>
@@ -10,7 +10,7 @@ export default {
   transition: 'layout',
   head () {
     return {
-      title: "Will Anderson | Front-end Developer & Problem Solver"
+      title: "Will Anderson | Front End Developer / Problem Solver"
     }
   },
 }
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 .Intro {
-  align-self:center;
+  margin:auto auto;
   text-align:center;
 }
 .Page-title {
